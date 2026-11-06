@@ -1,12 +1,12 @@
 @model Quản_Lý_KhoHàng.Models.DanhMuc
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Thêm danh mục";
 }
 
-<h1>Create</h1>
+<h1>Thêm danh mục</h1>
 
-<h4>DanhMuc</h4>
+<h4>Danh mục</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,25 +14,25 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
-                <label asp-for="TenDanhMuc" class="control-label"></label>
+                <label asp-for="TenDanhMuc" class="control-label">Tên danh mục</label>
                 <input asp-for="TenDanhMuc" class="form-control" />
                 <span asp-validation-for="TenDanhMuc" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="MoTa" class="control-label"></label>
-                <input asp-for="MoTa" class="form-control" />
+                <label asp-for="MoTa" class="control-label">Mô tả</label>
+                <textarea asp-for="MoTa" class="form-control"></textarea>
                 <span asp-validation-for="MoTa" class="text-danger"></span>
             </div>
 
             
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Lưu" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Quay lại danh sách</a>
 </div>

@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Quản_Lý_KhoHàng.Models;
 using Quản_Lý_KhoHàng.Data;
 
+namespace Quản_Lý_KhoHàng.Controllers;
+
 public class DanhMucController : Controller
 {
     private readonly CoSoDuLieuKho _context;
@@ -56,6 +58,10 @@ public class DanhMucController : Controller
                  nameof(DanhMuc.TenDanhMuc),
                  "Vui lòng nhập tên danh mục.");
         }
+        else if (danhmuc.TenDanhMuc.Length > 150)
+        {
+            ModelState.AddModelError(nameof(DanhMuc.TenDanhMuc), "Tên danh mục tối đa 150 ký tự.");
+        }
         else
         {
             var daTonTai = await _context.DanhMuc
@@ -105,9 +111,13 @@ public class DanhMucController : Controller
         {
             return NotFound();
         }
-        var daTonTai = await _context.DanhMuc.AnyAsync(d =>
-            d.TenDanhMuc == danhmuc.TenDanhMuc &&
-            d.MaDanhMuc != danhmuc.MaDanhMuc);
+        if (string.IsNullOrWhiteSpace(danhmuc.TenDanhMuc))
+            ModelState.AddModelError(nameof(DanhMuc.TenDanhMuc), "Vui lòng nhập tên danh mục.");
+        else if (danhmuc.TenDanhMuc.Length > 150)
+            ModelState.AddModelError(nameof(DanhMuc.TenDanhMuc), "Tên danh mục tối đa 150 ký tự.");
+
+        var daTonTai = !string.IsNullOrWhiteSpace(danhmuc.TenDanhMuc) && await _context.DanhMuc.AnyAsync(d =>
+            d.TenDanhMuc == danhmuc.TenDanhMuc && d.MaDanhMuc != danhmuc.MaDanhMuc);
 
         if (daTonTai)
         {
@@ -125,7 +135,7 @@ public class DanhMucController : Controller
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!DanhMucExists(danhmuc.MaDanhMuc))
+                if (!await DanhMucExists(danhmuc.MaDanhMuc))
                 {
                     return NotFound();
                 }
@@ -203,8 +213,8 @@ public class DanhMucController : Controller
      
     }
 
-    private bool DanhMucExists(int? id)
+    private Task<bool> DanhMucExists(int id)
     {
-        return _context.DanhMuc.Any(e => e.MaDanhMuc == id);
+        return _context.DanhMuc.AnyAsync(e => e.MaDanhMuc == id);
     }
 }

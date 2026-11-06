@@ -291,7 +291,6 @@ D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\staticweba
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\staticwebassets.development.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\swae.build.ex.cache
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Qu_n L_ .0C35E670.Up2Date
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.dll
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\refint\Quản Lý KhoHàng.dll
@@ -299,3 +298,4 @@ D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.genruntimeconfig.cache
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\ref\Quản Lý KhoHàng.dll
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.sourcelink.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

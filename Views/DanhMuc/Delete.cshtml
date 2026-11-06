@@ -1,12 +1,12 @@
 @model Quản_Lý_KhoHàng.Models.DanhMuc
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Xóa danh mục";
 }
 
-<h1>Delete</h1>
+<h1>Xóa danh mục</h1>
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-<h3>Are you sure you want to delete this?</h3>
+<h3>Bạn có chắc muốn xóa danh mục này?</h3>
 <div>
 
     <hr />
@@ -27,9 +27,9 @@
         </dd>
     </dl>
    
-    <form asp-action="Delete">
+    <form asp-action="Delete" asp-route-id="@Model.MaDanhMuc">
         <input type="hidden" asp-for="MaDanhMuc" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+        <a asp-action="Index">Quay lại danh sách</a>
     </form>
 </div>

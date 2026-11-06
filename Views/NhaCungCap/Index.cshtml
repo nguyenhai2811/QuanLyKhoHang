@@ -1,59 +1,6 @@
 @model IEnumerable<Quản_Lý_KhoHàng.Models.NhaCungCap>
-
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TenNhaCungCap)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SoDienThoai)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DiaChi)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LichSuNhapXuat)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(model => item.TenNhaCungCap)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.SoDienThoai)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.DiaChi)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.LichSuNhapXuat)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaNhaCungCap">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaNhaCungCap">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaNhaCungCap">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+@{ ViewData["Title"] = "Nhà cung cấp"; }
+<div class="d-flex justify-content-between align-items-center mb-3"><h1>Nhà cung cấp</h1><a asp-action="Create" class="btn btn-primary">Thêm nhà cung cấp</a></div>
+<div class="table-responsive"><table class="table table-striped"><thead><tr><th>Tên nhà cung cấp</th><th>Số điện thoại</th><th>Email</th><th>Địa chỉ</th><th></th></tr></thead><tbody>
+@foreach (var item in Model) { <tr><td>@item.TenNhaCungCap</td><td>@item.SoDienThoai</td><td>@item.Email</td><td>@item.DiaChi</td><td class="text-nowrap"><a asp-action="Edit" asp-route-id="@item.MaNhaCungCap">Sửa</a> | <a asp-action="Details" asp-route-id="@item.MaNhaCungCap">Chi tiết</a> | <a asp-action="Delete" asp-route-id="@item.MaNhaCungCap">Xóa</a></td></tr> }
+</tbody></table></div>

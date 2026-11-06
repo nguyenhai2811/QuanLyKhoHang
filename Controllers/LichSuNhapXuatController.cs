@@ -1,150 +1,103 @@
-
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Quản_Lý_KhoHàng.Models;
 using Quản_Lý_KhoHàng.Data;
+using Quản_Lý_KhoHàng.Models;
+
+namespace Quản_Lý_KhoHàng.Controllers;
 
 public class LichSuNhapXuatController : Controller
 {
     private readonly CoSoDuLieuKho _context;
+    public LichSuNhapXuatController(CoSoDuLieuKho context) => _context = context;
 
-    public LichSuNhapXuatController(CoSoDuLieuKho context)
+    public async Task<IActionResult> Index() => View(await _context.LichSuNhapXuat.Include(x => x.MaSanPhamNavigation).Include(x => x.MaNhaCungCapNavigation).AsNoTracking().OrderByDescending(x => x.NgayGiaoDich).ToListAsync());
+
+    public async Task<IActionResult> Details(long? id)
     {
-        _context = context;
+        if (id == null) return NotFound();
+        var item = await _context.LichSuNhapXuat.Include(x => x.MaSanPhamNavigation).Include(x => x.MaNhaCungCapNavigation).AsNoTracking().FirstOrDefaultAsync(x => x.MaGiaoDich == id);
+        return item == null ? NotFound() : View(item);
     }
 
-    // GET: LICHSUNHAPXUATS
-    public async Task<IActionResult> Index()    
-    {
-        return View(await _context.LichSuNhapXuat.ToListAsync());
-    }
+    public async Task<IActionResult> Create() { await LoadLookups(); return View(); }
 
-    // GET: LICHSUNHAPXUATS/Details/5
-    public async Task<IActionResult> Details(long? magiaodich)
-    {
-        if (magiaodich == null)
-        {
-            return NotFound();
-        }
-
-        var lichsunhapxuat = await _context.LichSuNhapXuat
-            .FirstOrDefaultAsync(m => m.MaGiaoDich == magiaodich);
-        if (lichsunhapxuat == null)
-        {
-            return NotFound();
-        }
-
-        return View(lichsunhapxuat);
-    }
-
-    // GET: LICHSUNHAPXUATS/Create
-    public IActionResult Create()
-    {
-        return View();
-    }
-
-    // POST: LICHSUNHAPXUATS/Create
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("MaGiaoDich,MaSanPham,MaNhaCungCap,LoaiGiaoDich,SoLuong,NgayGiaoDich,GhiChu,MaNhaCungCapNavigation,MaSanPhamNavigation")] LichSuNhapXuat lichsunhapxuat)
+    public async Task<IActionResult> Create([Bind("MaSanPham,MaNhaCungCap,LoaiGiaoDich,SoLuong,NgayGiaoDich,GhiChu")] LichSuNhapXuat item)
     {
+        Validate(item);
         if (ModelState.IsValid)
         {
-            _context.Add(lichsunhapxuat);
+            _context.LichSuNhapXuat.Add(item);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        return View(lichsunhapxuat);
+        await LoadLookups(item.MaSanPham, item.MaNhaCungCap);
+        return View(item);
     }
 
-    // GET: LICHSUNHAPXUATS/Edit/5
-    public async Task<IActionResult> Edit(long? magiaodich)
+    public async Task<IActionResult> Edit(long? id)
     {
-        if (magiaodich == null)
-        {
-            return NotFound();
-        }
-
-        var lichsunhapxuat = await _context.LichSuNhapXuat.FindAsync(magiaodich);
-        if (lichsunhapxuat == null)
-        {
-            return NotFound();
-        }
-        return View(lichsunhapxuat);
+        if (id == null) return NotFound();
+        var item = await _context.LichSuNhapXuat.FindAsync(id);
+        if (item == null) return NotFound();
+        await LoadLookups(item.MaSanPham, item.MaNhaCungCap);
+        return View(item);
     }
 
-    // POST: LICHSUNHAPXUATS/Edit/5
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(long? magiaodich, [Bind("MaGiaoDich,MaSanPham,MaNhaCungCap,LoaiGiaoDich,SoLuong,NgayGiaoDich,GhiChu,MaNhaCungCapNavigation,MaSanPhamNavigation")] LichSuNhapXuat lichsunhapxuat)
+    public async Task<IActionResult> Edit(long id, [Bind("MaGiaoDich,MaSanPham,MaNhaCungCap,LoaiGiaoDich,SoLuong,NgayGiaoDich,GhiChu")] LichSuNhapXuat item)
     {
-        if (magiaodich != lichsunhapxuat.MaGiaoDich)
-        {
-            return NotFound();
-        }
-
+        if (id != item.MaGiaoDich) return NotFound();
+        Validate(item);
         if (ModelState.IsValid)
         {
-            try
-            {
-                _context.Update(lichsunhapxuat);
-                await _context.SaveChangesAsync();
-            }
+            try { _context.Update(item); await _context.SaveChangesAsync(); }
             catch (DbUpdateConcurrencyException)
             {
-                if (!LichSuNhapXuatExists(lichsunhapxuat.MaGiaoDich))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                if (!await _context.LichSuNhapXuat.AnyAsync(x => x.MaGiaoDich == id)) return NotFound();
+                throw;
             }
             return RedirectToAction(nameof(Index));
         }
-        return View(lichsunhapxuat);
+        await LoadLookups(item.MaSanPham, item.MaNhaCungCap);
+        return View(item);
     }
 
-    // GET: LICHSUNHAPXUATS/Delete/5
-    public async Task<IActionResult> Delete(long? magiaodich)
+    public async Task<IActionResult> Delete(long? id)
     {
-        if (magiaodich == null)
-        {
-            return NotFound();
-        }
-
-        var lichsunhapxuat = await _context.LichSuNhapXuat
-            .FirstOrDefaultAsync(m => m.MaGiaoDich == magiaodich);
-        if (lichsunhapxuat == null)
-        {
-            return NotFound();
-        }
-
-        return View(lichsunhapxuat);
+        if (id == null) return NotFound();
+        var item = await _context.LichSuNhapXuat.Include(x => x.MaSanPhamNavigation).Include(x => x.MaNhaCungCapNavigation).AsNoTracking().FirstOrDefaultAsync(x => x.MaGiaoDich == id);
+        return item == null ? NotFound() : View(item);
     }
 
-    // POST: LICHSUNHAPXUATS/Delete/5
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(long? magiaodich)
+    public async Task<IActionResult> DeleteConfirmed(long id)
     {
-        var lichsunhapxuat = await _context.LichSuNhapXuat.FindAsync(magiaodich);
-        if (lichsunhapxuat != null)
-        {
-            _context.LichSuNhapXuat.Remove(lichsunhapxuat);
-        }
-
+        var item = await _context.LichSuNhapXuat.FindAsync(id);
+        if (item == null) return NotFound();
+        _context.LichSuNhapXuat.Remove(item);
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
 
-    private bool LichSuNhapXuatExists(long? magiaodich)
+    private void Validate(LichSuNhapXuat item)
     {
-        return _context.LichSuNhapXuat.Any(e => e.MaGiaoDich == magiaodich);
+        if (item.MaSanPham <= 0 || !_context.SanPham.Any(x => x.MaSanPham == item.MaSanPham)) ModelState.AddModelError(nameof(item.MaSanPham), "Vui lòng chọn sản phẩm hợp lệ.");
+        if (item.MaNhaCungCap.HasValue && !_context.NhaCungCap.Any(x => x.MaNhaCungCap == item.MaNhaCungCap)) ModelState.AddModelError(nameof(item.MaNhaCungCap), "Nhà cung cấp không hợp lệ.");
+        if (item.LoaiGiaoDich is not ("NHAP" or "XUAT")) ModelState.AddModelError(nameof(item.LoaiGiaoDich), "Loại giao dịch phải là NHAP hoặc XUAT.");
+        if (item.SoLuong <= 0) ModelState.AddModelError(nameof(item.SoLuong), "Số lượng phải lớn hơn 0.");
+        if (item.GhiChu?.Length > 1000) ModelState.AddModelError(nameof(item.GhiChu), "Ghi chú tối đa 1000 ký tự.");
+    }
+
+    private async Task LoadLookups(int? sanPhamId = null, int? nhaCungCapId = null)
+    {
+        var products = await _context.SanPham.AsNoTracking().OrderBy(x => x.TenSanPham).ToListAsync();
+        var suppliers = await _context.NhaCungCap.AsNoTracking().OrderBy(x => x.TenNhaCungCap).ToListAsync();
+        ViewData["MaSanPham"] = new SelectList(products, "MaSanPham", "TenSanPham", sanPhamId);
+        ViewData["MaNhaCungCap"] = new SelectList(suppliers, "MaNhaCungCap", "TenNhaCungCap", nhaCungCapId);
     }
 }

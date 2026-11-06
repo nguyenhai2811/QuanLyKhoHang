@@ -1,77 +1,9 @@
 @model IEnumerable<Quản_Lý_KhoHàng.Models.LichSuNhapXuat>
-
-@{
-    ViewData["Title"] = "Index";
+@{ ViewData["Title"] = "Lịch sử nhập xuất"; }
+<div class="d-flex justify-content-between align-items-center mb-3"><h1>Lịch sử nhập xuất</h1><a asp-action="Create" class="btn btn-primary">Thêm giao dịch</a></div>
+<div class="table-responsive"><table class="table table-striped align-middle"><thead><tr><th>Ngày</th><th>Sản phẩm</th><th>Loại</th><th>Số lượng</th><th>Nhà cung cấp</th><th>Ghi chú</th><th></th></tr></thead><tbody>
+@foreach (var item in Model)
+{
+    <tr><td>@item.NgayGiaoDich.ToString("g")</td><td>@item.MaSanPhamNavigation.TenSanPham</td><td>@(item.LoaiGiaoDich == "NHAP" ? "Nhập" : "Xuất")</td><td>@item.SoLuong</td><td>@(item.MaNhaCungCapNavigation?.TenNhaCungCap ?? "—")</td><td>@item.GhiChu</td><td class="text-nowrap"><a asp-action="Edit" asp-route-id="@item.MaGiaoDich">Sửa</a> | <a asp-action="Details" asp-route-id="@item.MaGiaoDich">Chi tiết</a> | <a asp-action="Delete" asp-route-id="@item.MaGiaoDich">Xóa</a></td></tr>
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.MaSanPham)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaNhaCungCap)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LoaiGiaoDich)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SoLuong)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NgayGiaoDich)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GhiChu)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaNhaCungCapNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaSanPhamNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(model => item.MaSanPham)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.MaNhaCungCap)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.LoaiGiaoDich)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.SoLuong)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.NgayGiaoDich)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.GhiChu)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.MaNhaCungCapNavigation)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.MaSanPhamNavigation)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaGiaoDich">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaGiaoDich">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaGiaoDich">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+</tbody></table></div>

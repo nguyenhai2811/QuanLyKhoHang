@@ -1,13 +1,13 @@
 @model IEnumerable<Quản_Lý_KhoHàng.Models.DanhMuc>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Danh mục";
 }
 
-<h1>Index</h1>
+<h1>Danh mục</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Thêm danh mục</a>
 </p>
 <table class="table">
     <thead>
@@ -33,9 +33,9 @@
             </td>
            
             <td>
-                <a asp-action="Edit" asp-route-id="@item.MaDanhMuc">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaDanhMuc">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaDanhMuc">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.MaDanhMuc">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaDanhMuc">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaDanhMuc">Xóa</a>
             </td>
         </tr>
 }
