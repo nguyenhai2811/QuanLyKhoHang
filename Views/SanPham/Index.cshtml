@@ -1,7 +1,8 @@
-@model IEnumerable<Quản_Lý_KhoHàng.Models.SanPham>
+﻿@model IEnumerable<Quản_Lý_KhoHàng.Models.SanPham>
 @{ ViewData["Title"] = "Sản phẩm"; }
 
 <div class="d-flex justify-content-between align-items-center mb-3"><h1>Sản phẩm</h1><a asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a></div>
+<form asp-action="Search" method="get" class="row g-2 mb-3"><div class="col-auto"><input type="search" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Tên sản phẩm, danh mục hoặc hãng" /></div><div class="col-auto"><button type="submit" class="btn btn-primary">Tìm kiếm</button> <a asp-action="Index" class="btn btn-secondary">Xóa lọc</a></div></form>
 <div class="table-responsive"><table class="table table-striped align-middle">
     <thead><tr><th>Tên sản phẩm</th><th>Giá bán</th><th>Tồn kho</th><th>Tồn tối thiểu</th><th>Danh mục</th><th>Hãng sản xuất</th><th></th></tr></thead>
     <tbody>
@@ -15,3 +16,4 @@
     }
     </tbody>
 </table></div>
+

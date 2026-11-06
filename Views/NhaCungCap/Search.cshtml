@@ -1,0 +1,7 @@
+@model IEnumerable<Quản_Lý_KhoHàng.Models.NhaCungCap>
+@{ ViewData["Title"] = "Tìm kiếm nhà cung cấp"; }
+<div class="d-flex justify-content-between align-items-center mb-3"><h1>Tìm kiếm nhà cung cấp</h1><a asp-action="Create" class="btn btn-primary">Thêm nhà cung cấp</a></div>
+<form asp-action="Search" method="get" class="row g-2 mb-3"><div class="col-md-6"><input type="search" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Tên, số điện thoại, email, địa chỉ hoặc mã" /></div><div class="col-auto"><button type="submit" class="btn btn-primary">Tìm kiếm</button> <a asp-action="Search" class="btn btn-secondary">Xóa lọc</a></div></form>
+<div class="table-responsive"><table class="table table-striped"><thead><tr><th>Mã</th><th>Tên nhà cung cấp</th><th>Số điện thoại</th><th>Email</th><th>Địa chỉ</th><th></th></tr></thead><tbody>
+@foreach (var item in Model) { <tr><td>@item.MaNhaCungCap</td><td>@item.TenNhaCungCap</td><td>@item.SoDienThoai</td><td>@item.Email</td><td>@item.DiaChi</td><td class="text-nowrap"><a asp-action="Edit" asp-route-id="@item.MaNhaCungCap">Sửa</a> | <a asp-action="Details" asp-route-id="@item.MaNhaCungCap">Chi tiết</a> | <a asp-action="Delete" asp-route-id="@item.MaNhaCungCap">Xóa</a></td></tr> }
+</tbody></table></div>

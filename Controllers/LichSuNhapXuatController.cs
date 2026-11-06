@@ -11,7 +11,18 @@ public class LichSuNhapXuatController : Controller
     private readonly CoSoDuLieuKho _context;
     public LichSuNhapXuatController(CoSoDuLieuKho context) => _context = context;
 
-    public async Task<IActionResult> Index() => View(await _context.LichSuNhapXuat.Include(x => x.MaSanPhamNavigation).Include(x => x.MaNhaCungCapNavigation).AsNoTracking().OrderByDescending(x => x.NgayGiaoDich).ToListAsync());
+    public async Task<IActionResult> Index(string? searchString)
+        => await Search(searchString);
+
+    [HttpGet]
+    public async Task<IActionResult> Search(string? searchString)
+    {
+        ViewData["CurrentFilter"] = searchString;
+        var query = _context.LichSuNhapXuat.Include(x => x.MaSanPhamNavigation).Include(x => x.MaNhaCungCapNavigation).AsNoTracking();
+        if (!string.IsNullOrWhiteSpace(searchString))
+            query = query.Where(x => x.MaSanPhamNavigation.TenSanPham.Contains(searchString) || (x.MaNhaCungCapNavigation != null && x.MaNhaCungCapNavigation.TenNhaCungCap.Contains(searchString)) || x.LoaiGiaoDich.Contains(searchString) || (x.GhiChu != null && x.GhiChu.Contains(searchString)) || x.MaGiaoDich.ToString() == searchString);
+        return View("Search", await query.OrderByDescending(x => x.NgayGiaoDich).ToListAsync());
+    }
 
     public async Task<IActionResult> Details(long? id)
     {

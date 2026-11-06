@@ -10,7 +10,18 @@ public class NhaCungCapController : Controller
     private readonly CoSoDuLieuKho _context;
     public NhaCungCapController(CoSoDuLieuKho context) => _context = context;
 
-    public async Task<IActionResult> Index() => View(await _context.NhaCungCap.AsNoTracking().ToListAsync());
+    public async Task<IActionResult> Index(string? searchString)
+        => await Search(searchString);
+
+    [HttpGet]
+    public async Task<IActionResult> Search(string? searchString)
+    {
+        ViewData["CurrentFilter"] = searchString;
+        var query = _context.NhaCungCap.AsNoTracking();
+        if (!string.IsNullOrWhiteSpace(searchString))
+            query = query.Where(x => x.TenNhaCungCap.Contains(searchString) || x.SoDienThoai.Contains(searchString) || (x.Email != null && x.Email.Contains(searchString)) || x.DiaChi.Contains(searchString) || x.MaNhaCungCap.ToString() == searchString);
+        return View("Search", await query.OrderBy(x => x.TenNhaCungCap).ToListAsync());
+    }
 
     public async Task<IActionResult> Details(int? id)
     {

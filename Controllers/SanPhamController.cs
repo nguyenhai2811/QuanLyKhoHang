@@ -11,7 +11,18 @@ public class SanPhamController : Controller
     private readonly CoSoDuLieuKho _context;
     public SanPhamController(CoSoDuLieuKho context) => _context = context;
 
-    public async Task<IActionResult> Index() => View(await _context.SanPham.Include(x => x.MaDanhMucNavigation).Include(x => x.MaHangNavigation).AsNoTracking().ToListAsync());
+    public async Task<IActionResult> Index(string? searchString)
+        => await Search(searchString);
+
+    [HttpGet]
+    public async Task<IActionResult> Search(string? searchString)
+    {
+        ViewData["CurrentFilter"] = searchString;
+        var query = _context.SanPham.Include(x => x.MaDanhMucNavigation).Include(x => x.MaHangNavigation).AsNoTracking();
+        if (!string.IsNullOrWhiteSpace(searchString))
+            query = query.Where(x => x.TenSanPham.Contains(searchString) || x.MaDanhMucNavigation.TenDanhMuc.Contains(searchString) || x.MaHangNavigation.TenHang.Contains(searchString) || x.MaSanPham.ToString() == searchString);
+        return View("Search", await query.OrderBy(x => x.TenSanPham).ToListAsync());
+    }
 
     public async Task<IActionResult> Details(int? id)
     {

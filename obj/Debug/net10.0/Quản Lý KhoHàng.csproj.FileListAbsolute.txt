@@ -298,4 +298,179 @@ D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.genruntimeconfig.cache
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\ref\Quản Lý KhoHàng.dll
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.sourcelink.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\appsettings.Development.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\appsettings.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Quản Lý KhoHàng.deps.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Quản Lý KhoHàng.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Quản Lý KhoHàng.pdb
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Azure.Core.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Azure.Identity.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Humanizer.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.AspNetCore.Identity.UI.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Bcl.AsyncInterfaces.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Build.Framework.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.CodeAnalysis.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.CodeAnalysis.CSharp.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.CodeAnalysis.Workspaces.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Data.SqlClient.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.EntityFrameworkCore.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.EntityFrameworkCore.Design.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.EntityFrameworkCore.Relational.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Extensions.DependencyModel.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Identity.Client.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Identity.Client.Broker.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.Identity.Client.NativeInterop.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.IdentityModel.Abstractions.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.IdentityModel.Logging.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.IdentityModel.Protocols.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.IdentityModel.Tokens.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.SqlServer.Server.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Microsoft.VisualStudio.SolutionPersistence.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Mono.TextTemplating.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\Newtonsoft.Json.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.ClientModel.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.CodeDom.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Composition.AttributedModel.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Composition.Convention.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Composition.Hosting.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Composition.Runtime.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Composition.TypedParts.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Configuration.ConfigurationManager.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.IdentityModel.Tokens.Jwt.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Memory.Data.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Security.Cryptography.Pkcs.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\System.Security.Cryptography.ProtectedData.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\cs\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\de\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\es\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\fr\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\it\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ja\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ko\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pl\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ru\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\tr\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\cs\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\de\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\es\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\fr\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\it\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ja\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ko\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pl\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\ru\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\tr\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\linux-x64\native\libmsalruntime.so
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\osx-arm64\native\msalruntime_arm64.dylib
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\osx-x64\native\msalruntime.dylib
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win-arm64\native\msalruntime_arm64.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win-x64\native\msalruntime.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win-x86\native\msalruntime_x86.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\appsettings.Development.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\appsettings.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.deps.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\appsettings.Development.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\appsettings.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\appsettings.Development.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\appsettings.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.deps.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.deps.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.Development.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.deps.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.Development.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.deps.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

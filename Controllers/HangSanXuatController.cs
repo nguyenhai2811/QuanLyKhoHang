@@ -11,7 +11,18 @@ public class HangSanXuatController : Controller
 
     public HangSanXuatController(CoSoDuLieuKho context) => _context = context;
 
-    public async Task<IActionResult> Index() => View(await _context.HangSanXuat.AsNoTracking().ToListAsync());
+    public async Task<IActionResult> Index(string? searchString)
+        => await Search(searchString);
+
+    [HttpGet]
+    public async Task<IActionResult> Search(string? searchString)
+    {
+        ViewData["CurrentFilter"] = searchString;
+        var query = _context.HangSanXuat.AsNoTracking();
+        if (!string.IsNullOrWhiteSpace(searchString))
+            query = query.Where(x => x.TenHang.Contains(searchString) || x.QuocGia.Contains(searchString) || x.MaHang.ToString() == searchString);
+        return View("Search", await query.OrderBy(x => x.TenHang).ToListAsync());
+    }
 
     public async Task<IActionResult> Details(int? id)
     {

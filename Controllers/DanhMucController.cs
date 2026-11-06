@@ -16,9 +16,17 @@ public class DanhMucController : Controller
     }
 
     // GET: DANHMUCS
-    public async Task<IActionResult> Index()    
+    public async Task<IActionResult> Index(string? searchString)
+        => await Search(searchString);
+
+    [HttpGet]
+    public async Task<IActionResult> Search(string? searchString)
     {
-        return View(await _context.DanhMuc.ToListAsync());
+        ViewData["CurrentFilter"] = searchString;
+        var query = _context.DanhMuc.AsNoTracking();
+        if (!string.IsNullOrWhiteSpace(searchString))
+            query = query.Where(x => x.TenDanhMuc.Contains(searchString) || (x.MoTa != null && x.MoTa.Contains(searchString)) || x.MaDanhMuc.ToString() == searchString);
+        return View("Search", await query.OrderBy(x => x.TenDanhMuc).ToListAsync());
     }
 
     // GET: DANHMUCS/Details/5
