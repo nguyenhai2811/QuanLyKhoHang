@@ -298,3 +298,4 @@ D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\refint\Qu�
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.pdb
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.genruntimeconfig.cache
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\ref\Quản Lý KhoHàng.dll
+D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\Quản Lý KhoHàng.sourcelink.json

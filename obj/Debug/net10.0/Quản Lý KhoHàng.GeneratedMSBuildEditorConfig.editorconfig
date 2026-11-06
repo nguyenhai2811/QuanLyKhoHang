@@ -55,12 +55,92 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaE11Y1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/HangSanXuat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ1Nhblh1YXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/HangSanXuat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ1Nhblh1YXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/HangSanXuat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ1Nhblh1YXRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/HangSanXuat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ1Nhblh1YXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/HangSanXuat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ1Nhblh1YXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/LichSuNhapXuat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaFN1TmhhcFh1YXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/LichSuNhapXuat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaFN1TmhhcFh1YXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/LichSuNhapXuat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaFN1TmhhcFh1YXRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/LichSuNhapXuat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaFN1TmhhcFh1YXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/LichSuNhapXuat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaFN1TmhhcFh1YXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/NhaCungCap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/NhaCungCap/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/NhaCungCap/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/NhaCungCap/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/NhaCungCap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/SanPham/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/SanPham/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/SanPham/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/SanPham/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/SanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/canthiet/Quản Lý KhoHàng/Quản Lý KhoHàng/Views/Shared/Error.cshtml]

@@ -1,0 +1,44 @@
+@model Quản_Lý_KhoHàng.Models.HangSanXuat
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>HangSanXuat</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaHang" />
+            <div class="form-group">
+                <label asp-for="TenHang" class="control-label"></label>
+                <input asp-for="TenHang" class="form-control" />
+                <span asp-validation-for="TenHang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuocGia" class="control-label"></label>
+                <input asp-for="QuocGia" class="form-control" />
+                <span asp-validation-for="QuocGia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SanPham" class="control-label"></label>
+                <input asp-for="SanPham" class="form-control" />
+                <span asp-validation-for="SanPham" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
