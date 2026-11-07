@@ -1,7 +1,10 @@
-@model IEnumerable<Quản_Lý_KhoHàng.Models.SanPham>
-@{ ViewData["Title"] = "Tìm kiếm sản phẩm"; }
-<div class="d-flex justify-content-between align-items-center mb-3"><h1>Tìm kiếm sản phẩm</h1><a asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a></div>
-<form asp-action="Search" method="get" class="row g-2 mb-3"><div class="col-md-6"><input type="search" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Tên sản phẩm, danh mục, hãng hoặc mã" /></div><div class="col-auto"><button type="submit" class="btn btn-primary">Tìm kiếm</button> <a asp-action="Search" class="btn btn-secondary">Xóa lọc</a></div></form>
-<div class="table-responsive"><table class="table table-striped align-middle"><thead><tr><th>Mã</th><th>Tên sản phẩm</th><th>Giá bán</th><th>Tồn kho</th><th>Tồn tối thiểu</th><th>Danh mục</th><th>Hãng</th><th></th></tr></thead><tbody>
-@foreach (var item in Model) { <tr><td>@item.MaSanPham</td><td>@item.TenSanPham</td><td>@item.GiaBan.ToString("N0")</td><td>@item.SoLuongTon</td><td>@item.TonKhoToiThieu</td><td>@item.MaDanhMucNavigation.TenDanhMuc</td><td>@item.MaHangNavigation.TenHang</td><td class="text-nowrap"><a asp-action="Edit" asp-route-id="@item.MaSanPham">Sửa</a> | <a asp-action="Details" asp-route-id="@item.MaSanPham">Chi tiết</a> | <a asp-action="Delete" asp-route-id="@item.MaSanPham">Xóa</a></td></tr> }
+@model PagedResult<SanPham>
+@{ ViewData["Title"] = "TÃ¬m kiáº¿m sáº£n pháº©m"; }
+<div class="d-flex justify-content-between align-items-center mb-3"><h1>TÃ¬m kiáº¿m sáº£n pháº©m</h1><a asp-action="Create" class="btn btn-primary">ThÃªm sáº£n pháº©m</a></div>
+<form asp-action="Search" method="get" class="row g-2 mb-3"><div class="col-md-6"><input type="search" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="TÃªn sáº£n pháº©m, danh má»¥c, hÃ£ng hoáº·c mÃ£" /></div><div class="col-auto"><button type="submit" class="btn btn-primary">TÃ¬m kiáº¿m</button> <a asp-action="Search" class="btn btn-secondary">XÃ³a lá»c</a></div></form>
+<div class="table-responsive"><table class="table table-striped align-middle"><thead><tr><th>MÃ£</th><th>TÃªn sáº£n pháº©m</th><th>GiÃ¡ bÃ¡n</th><th>Tá»“n kho</th><th>Tá»“n tá»‘i thiá»ƒu</th><th>Danh má»¥c</th><th>HÃ£ng</th><th></th></tr></thead><tbody>
+@foreach (var item in Model.Items) { <tr><td>@item.MaSanPham</td><td>@item.TenSanPham</td><td>@item.GiaBan.ToString("N0")</td><td>@item.SoLuongTon</td><td>@item.TonKhoToiThieu</td><td>@item.MaDanhMucNavigation.TenDanhMuc</td><td>@item.MaHangNavigation.TenHang</td><td class="text-nowrap"><a asp-action="Edit" asp-route-id="@item.MaSanPham">Sá»­a</a> | <a asp-action="Details" asp-route-id="@item.MaSanPham">Chi tiáº¿t</a> | <a asp-action="Delete" asp-route-id="@item.MaSanPham">XÃ³a</a></td></tr> }
 </tbody></table></div>
+
+@await Html.PartialAsync("_Pagination", Model)
+

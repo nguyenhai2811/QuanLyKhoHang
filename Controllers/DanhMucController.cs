@@ -16,17 +16,28 @@ public class DanhMucController : Controller
     }
 
     // GET: DANHMUCS
-    public async Task<IActionResult> Index(string? searchString)
-        => await Search(searchString);
+    public async Task<IActionResult> Index(string? searchString, int page = 1)
+        => await Search(searchString, page);
 
     [HttpGet]
-    public async Task<IActionResult> Search(string? searchString)
+    public async Task<IActionResult> Search(string? searchString, int page = 1)
     {
         ViewData["CurrentFilter"] = searchString;
         var query = _context.DanhMuc.AsNoTracking();
         if (!string.IsNullOrWhiteSpace(searchString))
             query = query.Where(x => x.TenDanhMuc.Contains(searchString) || (x.MoTa != null && x.MoTa.Contains(searchString)) || x.MaDanhMuc.ToString() == searchString);
-        return View("Search", await query.OrderBy(x => x.TenDanhMuc).ToListAsync());
+        return View("Search", await Paginate(query.OrderBy(x => x.TenDanhMuc), page));
+    }
+
+    private async Task<PagedResult<DanhMuc>> Paginate(IQueryable<DanhMuc> query, int page)
+    {
+        const int pageSize = 10;
+        var totalItems = await query.CountAsync();
+        var totalPages = Math.Max(1, (int)Math.Ceiling(totalItems / (double)pageSize));
+        page = Math.Clamp(page, 1, totalPages);
+        ViewData["PageNumber"] = page;
+        ViewData["TotalPages"] = totalPages;
+        return new PagedResult<DanhMuc> { Items = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync(), PageNumber = page, TotalPages = totalPages, TotalItems = totalItems };
     }
 
     // GET: DANHMUCS/Details/5

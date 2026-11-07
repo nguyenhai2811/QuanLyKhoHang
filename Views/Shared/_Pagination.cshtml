@@ -1,0 +1,30 @@
+@model PagedResult<object>
+@{
+    var action = ViewData["PaginationAction"]?.ToString() ?? "Index";
+    var searchString = ViewData["CurrentFilter"]?.ToString();
+    var startItem = Model.TotalItems == 0 ? 0 : (Model.PageNumber - 1) * 10 + 1;
+    var endItem = Math.Min(Model.PageNumber * 10, Model.TotalItems);
+}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3">
+    <small class="text-muted">Hiển thị @startItem–@endItem trong tổng số @Model.TotalItems mục</small>
+    @if (Model.TotalPages > 1)
+    {
+        <nav aria-label="Phân trang">
+            <ul class="pagination pagination-sm mb-0">
+                <li class="page-item @(Model.PageNumber <= 1 ? "disabled" : "")">
+                    <a class="page-link" asp-action="@action" asp-route-searchString="@searchString" asp-route-page="@(Model.PageNumber - 1)" aria-label="Trang trước">&laquo;</a>
+                </li>
+                @for (var pageNumber = 1; pageNumber <= Model.TotalPages; pageNumber++)
+                {
+                    <li class="page-item @(pageNumber == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" asp-action="@action" asp-route-searchString="@searchString" asp-route-page="@pageNumber" aria-current="@(pageNumber == Model.PageNumber ? "page" : null)">@pageNumber</a>
+                    </li>
+                }
+                <li class="page-item @(Model.PageNumber >= Model.TotalPages ? "disabled" : "")">
+                    <a class="page-link" asp-action="@action" asp-route-searchString="@searchString" asp-route-page="@(Model.PageNumber + 1)" aria-label="Trang sau">&raquo;</a>
+                </li>
+            </ul>
+        </nav>
+    }
+</div>

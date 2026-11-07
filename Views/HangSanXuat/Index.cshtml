@@ -1,8 +1,11 @@
-﻿@model IEnumerable<Quản_Lý_KhoHàng.Models.HangSanXuat>
+﻿@model Quản_Lý_KhoHàng.Models.PagedResult<Quản_Lý_KhoHàng.Models.HangSanXuat>
 @{ ViewData["Title"] = "Hãng sản xuất"; }
 <div class="d-flex justify-content-between align-items-center mb-3"><h1>Hãng sản xuất</h1><a asp-action="Create" class="btn btn-primary">Thêm hãng</a></div>
 <form asp-action="Search" method="get" class="row g-2 mb-3"><div class="col-auto"><input type="search" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Tên hãng hoặc quốc gia" /></div><div class="col-auto"><button type="submit" class="btn btn-primary">Tìm kiếm</button> <a asp-action="Index" class="btn btn-secondary">Xóa lọc</a></div></form>
 <table class="table table-striped"><thead><tr><th>Tên hãng</th><th>Quốc gia</th><th></th></tr></thead><tbody>
-@foreach (var item in Model) { <tr><td>@item.TenHang</td><td>@item.QuocGia</td><td><a asp-action="Edit" asp-route-id="@item.MaHang">Sửa</a> | <a asp-action="Details" asp-route-id="@item.MaHang">Chi tiết</a> | <a asp-action="Delete" asp-route-id="@item.MaHang">Xóa</a></td></tr> }
+@foreach (var item in Model.Items) { <tr><td>@item.TenHang</td><td>@item.QuocGia</td><td><a asp-action="Edit" asp-route-id="@item.MaHang">Sửa</a> | <a asp-action="Details" asp-route-id="@item.MaHang">Chi tiết</a> | <a asp-action="Delete" asp-route-id="@item.MaHang">Xóa</a></td></tr> }
 </tbody></table>
+
+
+@await Html.PartialAsync("_Pagination", Model)
 

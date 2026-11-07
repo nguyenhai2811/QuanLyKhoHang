@@ -11,17 +11,28 @@ public class LichSuNhapXuatController : Controller
     private readonly CoSoDuLieuKho _context;
     public LichSuNhapXuatController(CoSoDuLieuKho context) => _context = context;
 
-    public async Task<IActionResult> Index(string? searchString)
-        => await Search(searchString);
+    public async Task<IActionResult> Index(string? searchString, int page = 1)
+        => await Search(searchString, page);
 
     [HttpGet]
-    public async Task<IActionResult> Search(string? searchString)
+    public async Task<IActionResult> Search(string? searchString, int page = 1)
     {
         ViewData["CurrentFilter"] = searchString;
         var query = _context.LichSuNhapXuat.Include(x => x.MaSanPhamNavigation).Include(x => x.MaNhaCungCapNavigation).AsNoTracking();
         if (!string.IsNullOrWhiteSpace(searchString))
             query = query.Where(x => x.MaSanPhamNavigation.TenSanPham.Contains(searchString) || (x.MaNhaCungCapNavigation != null && x.MaNhaCungCapNavigation.TenNhaCungCap.Contains(searchString)) || x.LoaiGiaoDich.Contains(searchString) || (x.GhiChu != null && x.GhiChu.Contains(searchString)) || x.MaGiaoDich.ToString() == searchString);
-        return View("Search", await query.OrderByDescending(x => x.NgayGiaoDich).ToListAsync());
+        return View("Search", await Paginate(query.OrderByDescending(x => x.NgayGiaoDich), page));
+    }
+
+    private async Task<PagedResult<LichSuNhapXuat>> Paginate(IQueryable<LichSuNhapXuat> query, int page)
+    {
+        const int pageSize = 10;
+        var totalItems = await query.CountAsync();
+        var totalPages = Math.Max(1, (int)Math.Ceiling(totalItems / (double)pageSize));
+        page = Math.Clamp(page, 1, totalPages);
+        ViewData["PageNumber"] = page;
+        ViewData["TotalPages"] = totalPages;
+        return new PagedResult<LichSuNhapXuat> { Items = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync(), PageNumber = page, TotalPages = totalPages, TotalItems = totalItems };
     }
 
     public async Task<IActionResult> Details(long? id)

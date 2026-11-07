@@ -11,17 +11,28 @@ public class SanPhamController : Controller
     private readonly CoSoDuLieuKho _context;
     public SanPhamController(CoSoDuLieuKho context) => _context = context;
 
-    public async Task<IActionResult> Index(string? searchString)
-        => await Search(searchString);
+    public async Task<IActionResult> Index(string? searchString, int page = 1)
+        => await Search(searchString, page);
 
     [HttpGet]
-    public async Task<IActionResult> Search(string? searchString)
+    public async Task<IActionResult> Search(string? searchString, int page = 1)
     {
         ViewData["CurrentFilter"] = searchString;
         var query = _context.SanPham.Include(x => x.MaDanhMucNavigation).Include(x => x.MaHangNavigation).AsNoTracking();
         if (!string.IsNullOrWhiteSpace(searchString))
             query = query.Where(x => x.TenSanPham.Contains(searchString) || x.MaDanhMucNavigation.TenDanhMuc.Contains(searchString) || x.MaHangNavigation.TenHang.Contains(searchString) || x.MaSanPham.ToString() == searchString);
-        return View("Search", await query.OrderBy(x => x.TenSanPham).ToListAsync());
+        return View("Search", await Paginate(query.OrderBy(x => x.TenSanPham), page));
+    }
+
+    private async Task<PagedResult<SanPham>> Paginate(IQueryable<SanPham> query, int page)
+    {
+        const int pageSize = 10;
+        var totalItems = await query.CountAsync();
+        var totalPages = Math.Max(1, (int)Math.Ceiling(totalItems / (double)pageSize));
+        page = Math.Clamp(page, 1, totalPages);
+        ViewData["PageNumber"] = page;
+        ViewData["TotalPages"] = totalPages;
+        return new PagedResult<SanPham> { Items = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync(), PageNumber = page, TotalPages = totalPages, TotalItems = totalItems };
     }
 
     public async Task<IActionResult> Details(int? id)

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Quản_Lý_KhoHàng.Models.DanhMuc>
+﻿@model Quản_Lý_KhoHàng.Models.PagedResult<Quản_Lý_KhoHàng.Models.DanhMuc>
 
 @{
     ViewData["Title"] = "Danh mục";
@@ -18,17 +18,17 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TenDanhMuc)
+                @Html.DisplayNameFor(model => model.Items[0].TenDanhMuc)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MoTa)
+                @Html.DisplayNameFor(model => model.Items[0].MoTa)
             </th>
            
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Items) {
         <tr>
             <td>
                 @Html.DisplayFor(model => item.TenDanhMuc)
@@ -46,4 +46,8 @@
 }
     </tbody>
 </table>
+
+
+@await Html.PartialAsync("_Pagination", Model)
+
 
