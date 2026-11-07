@@ -1,4 +1,4 @@
-@model PagedResult<object>
+@model IPagedResult
 @{
     var action = ViewData["PaginationAction"]?.ToString() ?? "Index";
     var searchString = ViewData["CurrentFilter"]?.ToString();
@@ -15,10 +15,10 @@
                 <li class="page-item @(Model.PageNumber <= 1 ? "disabled" : "")">
                     <a class="page-link" asp-action="@action" asp-route-searchString="@searchString" asp-route-page="@(Model.PageNumber - 1)" aria-label="Trang trước">&laquo;</a>
                 </li>
-                @for (var pageNumber = 1; pageNumber <= Model.TotalPages; pageNumber++)
+                @for (var page = 1; page <= Model.TotalPages; page++)
                 {
-                    <li class="page-item @(pageNumber == Model.PageNumber ? "active" : "")">
-                        <a class="page-link" asp-action="@action" asp-route-searchString="@searchString" asp-route-page="@pageNumber" aria-current="@(pageNumber == Model.PageNumber ? "page" : null)">@pageNumber</a>
+                    <li class="page-item @(page == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" asp-action="@action" asp-route-searchString="@searchString" asp-route-page="@(page)" aria-current="@(page == Model.PageNumber ? "page" : null)">@(page)</a>
                     </li>
                 }
                 <li class="page-item @(Model.PageNumber >= Model.TotalPages ? "disabled" : "")">

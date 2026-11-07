@@ -449,28 +449,10 @@ D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artif
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\appsettings.Development.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\appsettings.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\appsettings.Development.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\appsettings.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.deps.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.deps.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.Development.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.deps.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.Development.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\appsettings.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.deps.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.runtimeconfig.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.endpoints.json
-D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\bin\Debug\net10.0\artifacts\search-build\artifacts\search-build\artifacts\search-build\Quản Lý KhoHàng.staticwebassets.runtime.json
 D:\canthiet\Quản Lý KhoHàng\Quản Lý KhoHàng\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
