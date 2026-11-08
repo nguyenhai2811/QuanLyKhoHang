@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Quản_Lý_KhoHàng.Models;
 using Quản_Lý_KhoHàng.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Quản_Lý_KhoHàng.Controllers;
 
@@ -14,11 +15,11 @@ public class DanhMucController : Controller
     {
         _context = context;
     }
-
+    [Authorize]
     // GET: DANHMUCS
     public async Task<IActionResult> Index(string? searchString, int page = 1)
         => await Search(searchString, page);
-
+    [Authorize]
     [HttpGet]
     public async Task<IActionResult> Search(string? searchString, int page = 1)
     {
@@ -28,7 +29,7 @@ public class DanhMucController : Controller
             query = query.Where(x => x.TenDanhMuc.Contains(searchString) || (x.MoTa != null && x.MoTa.Contains(searchString)) || x.MaDanhMuc.ToString() == searchString);
         return View("Search", await Paginate(query.OrderBy(x => x.TenDanhMuc), page));
     }
-
+    [Authorize]
     private async Task<PagedResult<DanhMuc>> Paginate(IQueryable<DanhMuc> query, int page)
     {
         const int pageSize = 10;
@@ -39,7 +40,7 @@ public class DanhMucController : Controller
         ViewData["TotalPages"] = totalPages;
         return new PagedResult<DanhMuc> { Items = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync(), PageNumber = page, TotalPages = totalPages, TotalItems = totalItems };
     }
-
+    [Authorize]
     // GET: DANHMUCS/Details/5
     public async Task<IActionResult> Details(int? id)
     {
@@ -57,7 +58,7 @@ public class DanhMucController : Controller
 
         return View(danhmuc);
     }
-
+    [Authorize]
     // GET: DANHMUCS/Create
     public IActionResult Create()
     {
@@ -67,6 +68,7 @@ public class DanhMucController : Controller
     // POST: DANHMUCS/Create
     // To protect from overposting attacks, enable the specific properties you want to bind to.
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+    [Authorize]
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create([Bind("TenDanhMuc,MoTa")] DanhMuc danhmuc)
@@ -102,7 +104,7 @@ public class DanhMucController : Controller
         }
         return View(danhmuc);
     }
-
+    [Authorize]
     // GET: DANHMUCS/Edit/5
     public async Task<IActionResult> Edit(int? id)
     {
@@ -118,7 +120,7 @@ public class DanhMucController : Controller
         }
         return View(danhmuc);
     }
-
+    [Authorize]
     // POST: DANHMUCS/Edit/5
     // To protect from overposting attacks, enable the specific properties you want to bind to.
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -169,6 +171,7 @@ public class DanhMucController : Controller
     }
 
     // GET: DANHMUCS/Delete/5
+    [Authorize]
     public async Task<IActionResult> Delete(int? id)
     {
         if (id == null)
@@ -187,6 +190,7 @@ public class DanhMucController : Controller
     }
 
     // POST: DANHMUCS/Delete/5
+    [Authorize]
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int? id)
@@ -231,6 +235,7 @@ public class DanhMucController : Controller
         }
      
     }
+    [Authorize]
 
     private Task<bool> DanhMucExists(int id)
     {
